@@ -4,5 +4,6 @@ Comprehensive review of competitive programming algorithms and snippets
 # content
 - algebra
   - fast fourier transform
-  - mobius function
+  - möbius function
   - modular arithmetic
+- base (default c++ template)
