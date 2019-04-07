@@ -14,18 +14,17 @@ const double PI = acos(-1);
  * - split odd and even coefficients
  * - fft each array
  * - merge
- * FFT_n[  i  ] = E[i] + e^{i2pi/n} O[i]
- * FFT_n[i+n/2] = E[i] - e^{i2pi/n} O[i]
+ * X[  i  ] = E[i] + e^{i2pi/n} O[i]
+ * X[i+n/2] = E[i] - e^{i2pi/n} O[i]
  *
  * applications:
  * 1. polynomial multiplication
  * store coefficients in an array
  * A*B = invFFT(FFT(A).*FFT(B))
- * (works integer multiplication as well)
- */
+ * can be extended to periodic sequences */
 
 
-// Recursive FFT
+/* Recursive FFT */
 void recfft(vector<cd>& a,bool invert) {
     int n = a.size();
     int n2 = n/2;
@@ -104,14 +103,15 @@ void tfprqr(cd* a,int n, bool invert) {
 }
 
 int main() {
-    int n = 8;
-    cd a[8];
-    cd b[8];
+    const int n = 1<<3;
+    cd a[n];
+    cd b[n];
     a[2] = b[3] = 2.;
-    tfprqr(a,8,0);
-    tfprqr(b,8,0);
+    tfprqr(a,n,0);
+    tfprqr(b,n,0);
     for (int i=0;i<n;i++) a[i] *= b[i];
-    tfprqr(a,8,1);
+    tfprqr(a,n,1);
     for (int i=0;i<n;i++) cout << a[i].real() << ' ';
     cout << endl;
 }
+

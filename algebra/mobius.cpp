@@ -5,8 +5,9 @@ using namespace std;
 #define ll long long
 #define pb push_back
 const int N = 1e6;
+
 /* Möbius function mu(n)
- * O(nloglogn)
+ * O(nlog2n) need to check it
  *
  * applications:
  * 1. inverse möbius formula
@@ -24,7 +25,7 @@ void mobius() {
     for (int i=2;i<N;i++) {
         if (prime[i]) primes.pb(i), mu[i]=-1;
         for (auto &p:primes) {
-            if (i*p>=N) break; // density of primes -> no 
+            if (i*p>=N) break;
             prime[i*p]=0; // not prime
             if (i%p==0) { mu[i*p]=0; break; } // mult > 1
             else mu[i*p]=mu[i]*mu[p]; // distinct or 0

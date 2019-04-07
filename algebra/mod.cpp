@@ -1,6 +1,7 @@
 /* git@drhasler - 04/19 */
 #include <bits/stdc++.h>
 using namespace std;
+
 #define ll long long
 #define pii pair<int,int>
 #define xx first
@@ -83,7 +84,6 @@ int modinv(int a) {
  * the solution is unique modulo k1*..*kn
  * warning: be aware of overflows */
 
-
 pii CRT(vector<pii>& ak) {
     ll a=0,mod=1;
     for (auto& k:ak) {
@@ -93,8 +93,10 @@ pii CRT(vector<pii>& ak) {
         mod *= k.yy;
         a %= mod;
     }
+    if (a<0) a+=mod;
     return {a,mod};
 }
+
 
 int main() {
     string lb = "longboiiiiiiiiiiiiii";
