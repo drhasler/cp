@@ -1,0 +1,6 @@
+# vim
+*.swp
+# compiled
+*.o
+*.out
+
