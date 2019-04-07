@@ -39,7 +39,7 @@ you already know basic concepts: gcd, lcm, prime, modulo, factorization
 
 [mob]: https://en.wikipedia.org/wiki/M%C3%B6bius_function "Möbius function"
 [dense]: https://en.wikipedia.org/wiki/Prime-counting_function "Prime count"
-[dioph]: https://latex.codecogs.com/gif.latex?%5Cinline%20%28x%2Cy%29%20%5C%20%7C%20%5C%20ax&plus;by%3Dc
-[dislog1]: https://latex.codecogs.com/gif.latex?%5Cinline%20x%20%5C%20%7C%20%5C%20a%5Ex%20%5Cequiv%20b%20%5Cpmod%20m%2C%20%5C%20%5Cgcd%28a%2Cm%29%3D1
-[dislog2]: https://latex.codecogs.com/gif.latex?%5Cinline%20a%5E%7Bp%20%5Csqrt%7Bm%7D%7D%20%5Cequiv%20a%5E%7Bq%7Db%20%5Cpmod%20m
+[dioph]: https://latex.codecogs.com/gif.latex?%28x%2Cy%29%20%5C%20%7C%20%5C%20ax&plus;by%3Dc
+[dislog1]: https://latex.codecogs.com/gif.latex?x%20%5C%20%7C%20%5C%20a%5Ex%20%5Cequiv%20b%20%5Cpmod%20m%2C%20%5C%20%5Cgcd%28a%2Cm%29%3D1
+[dislog2]: https://latex.codecogs.com/gif.latex?a%5E%7Bp%20%5Csqrt%7Bm%7D%7D%20%5Cequiv%20a%5E%7Bq%7Db%20%5Cpmod%20m
 
