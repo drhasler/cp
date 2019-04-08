@@ -7,6 +7,7 @@ using namespace std;
 
 #define um unordered_map
 #define us unordered_set
+#define pq priority_queue
 #define ll long long
 #define pi pair<int,int>
 #define vi vector<int>
